@@ -2,6 +2,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 
 export default function SignUp() {
   const [email, setEmail] = useState("");
@@ -32,10 +33,17 @@ export default function SignUp() {
 
         <button
           type="submit"
-          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-blue-700 transition"
+          className="w-full bg-blue-600 text-white py-2 rounded hover:bg-green-700 transition"
         >
-          Create Account
+          Sign Up
         </button>
+
+        <p className="mt-4 text-sm text-center">
+          Already have an account?{" "}
+          <Link href="/signin" className="text-blue-600 hover:underline">
+            Sign in instead
+          </Link>
+        </p>
       </form>
     </div>
   );
