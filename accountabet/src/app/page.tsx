@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Link from "next/link";
 import NavBar1 from "@/components/NavBar";
 export default function Home() {
   return (
@@ -18,12 +18,11 @@ export default function Home() {
             remarkable results!
           </p>
           <div className="mt-10 flex justify-center gap-4 flex-wrap">
-            <button className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
-              Login
-            </button>
-            <button className="border border-white text-white px-6 py-3 rounded-full hover:bg-white hover:text-black transition">
-              Sign Up
-            </button>
+            <Link href="/signup">
+              <button className="bg-white text-black font-semibold px-6 py-3 rounded-full shadow hover:bg-gray-100 transition">
+                Start here.
+              </button>
+            </Link>
           </div>
         </div>
       </section>
