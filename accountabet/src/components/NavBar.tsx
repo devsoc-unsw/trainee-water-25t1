@@ -64,13 +64,13 @@ const Navbar1 = ({
   },
 }: Navbar1Props) => {
   return (
-    <section className="py-4">
+    <section className="py-4 absolute z-10 w-full">
       <div className="container">
         {/* Desktop Menu */}
         <nav className="relative hidden lg:flex items-center justify-between">
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <a className="flex items-center gap-2">
-              <span className="text-2xl sm:text-3xl font-bold tracking-tight">
+              <span className="text-4xl sm:text-4xl font-bold tracking-tight text-white">
                 AccountaBet.
               </span>
             </a>
