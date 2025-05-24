@@ -120,3 +120,10 @@
     @apply bg-background text-foreground;
   }
 }
+
+@font-face {
+  font-family: "Miskan";
+  src: url("../font/miskan/Miskan.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}

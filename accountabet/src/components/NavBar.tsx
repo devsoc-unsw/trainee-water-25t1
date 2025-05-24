@@ -1,3 +1,5 @@
+import "../app/globals.css";
+
 import { Book, Menu, Sunset, Trees, Zap } from "lucide-react";
 
 import {
@@ -70,7 +72,10 @@ const Navbar1 = ({
         <nav className="relative hidden lg:flex items-center justify-between">
           <div className="absolute left-1/2 transform -translate-x-1/2">
             <a className="flex items-center gap-2">
-              <span className="text-4xl sm:text-4xl font-bold tracking-tight text-white">
+              <span
+                className="text-4xl sm:text-4xl tracking-tight text-white"
+                style={{ fontFamily: "Miskan" }}
+              >
                 AccountaBet.
               </span>
             </a>
