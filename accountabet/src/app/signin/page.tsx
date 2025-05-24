@@ -3,7 +3,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import Navbar1 from "@/components/NavBar2";
+import Navbar1 from "@/components/NavBar";
 export default function SignIn() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
