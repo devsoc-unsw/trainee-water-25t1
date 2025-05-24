@@ -172,7 +172,7 @@ const config = {
       "value": "prisma-client-js"
     },
     "output": {
-      "value": "/home/dylanhu/trainee-water-25t1/accountabet/generated/prisma",
+      "value": "/home/vedant/trainee-water-25t1/accountabet/generated/prisma",
       "fromEnvVar": null
     },
     "config": {
@@ -186,11 +186,12 @@ const config = {
       }
     ],
     "previewFeatures": [],
-    "sourceFilePath": "/home/dylanhu/trainee-water-25t1/accountabet/prisma/schema.prisma",
+    "sourceFilePath": "/home/vedant/trainee-water-25t1/accountabet/prisma/schema.prisma",
     "isCustomOutput": true
   },
   "relativeEnvPaths": {
-    "rootEnvPath": null
+    "rootEnvPath": null,
+    "schemaEnvPath": "../../.env"
   },
   "relativePath": "../../prisma",
   "clientVersion": "6.8.2",
@@ -199,7 +200,7 @@ const config = {
     "db"
   ],
   "activeProvider": "postgresql",
-  "postinstall": true,
+  "postinstall": false,
   "inlineDatasources": {
     "db": {
       "url": {
