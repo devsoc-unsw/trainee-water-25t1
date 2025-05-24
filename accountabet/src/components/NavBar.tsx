@@ -24,6 +24,13 @@ import {
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+import {
+  SignedIn,
+  SignedOut,
+  SignInButton,
+  SignUpButton,
+  UserButton,
+} from "@clerk/nextjs";
 
 interface MenuItem {
   title: string;
@@ -69,12 +76,21 @@ const Navbar1 = ({
             </a>
           </div>
           <div className="flex gap-2 ml-auto mr-2">
-            <Button asChild variant="outline" size="sm">
+            {/* <Button asChild variant="outline" size="sm">
               <a href={auth.login.url}>{auth.login.title}</a>
             </Button>
             <Button asChild size="sm">
               <a href={auth.signup.url}>{auth.signup.title}</a>
-            </Button>
+            </Button> */}
+            <header className="flex justify-end items-center p-4 gap-4 h-16">
+              <SignedOut>
+                <SignInButton />
+                <SignUpButton />
+              </SignedOut>
+              <SignedIn>
+                <UserButton />
+              </SignedIn>
+            </header>
           </div>
         </nav>
 
