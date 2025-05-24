@@ -31,16 +31,22 @@ export default function Home() {
           <h1 className="text-6xl sm:text-6xl font-extrabold leading-tight mb-6">
             How does it work?
           </h1>
+
+          <h2 className="text-3xl sm:text-3xl font-bold mt-6 mb-3">
+            Going Solo
+          </h2>
+
           <p className="text-sm sm:text-base text-white/90 max-w-2xl mx-auto">
-            <h2 className="text-3xl sm:text-3xl font-bold mt-6 mb-3">
-              Going Solo
-            </h2>
             1. Create an account and add your habits. <br />
             2. Set a fine for each habit you miss. <br />
             3. Track your progress and pay fines for missed habits. <br />
-            <h2 className="text-3xl sm:text-3xl font-bold mt-6 mb-3">
-              In a Group
-            </h2>
+          </p>
+
+          <h2 className="text-3xl sm:text-3xl font-bold mt-6 mb-3">
+            In a Group
+          </h2>
+
+          <p>
             1. Create a group and invite your friends. <br />
             2. Track your progress... Keep each other accountable!
             <br />

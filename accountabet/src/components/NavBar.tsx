@@ -34,12 +34,6 @@ interface MenuItem {
 }
 
 interface Navbar1Props {
-  logo?: {
-    url: string;
-    src: string;
-    alt: string;
-    title: string;
-  };
   menu?: MenuItem[];
   auth?: {
     login: {
@@ -54,12 +48,6 @@ interface Navbar1Props {
 }
 
 const Navbar1 = ({
-  logo = {
-    url: "https://www.shadcnblocks.com",
-    src: "https://shadcnblocks.com/images/block/logos/shadcnblockscom-icon.svg",
-    alt: "logo",
-    title: "Shadcnblocks.com",
-  },
   auth = {
     login: { title: "Login", url: "signin" },
     signup: { title: "Sign up", url: "signup" },
@@ -94,8 +82,8 @@ const Navbar1 = ({
         <div className="block lg:hidden">
           <div className="flex items-center justify-between">
             {/* Logo */}
-            <a href={logo.url} className="flex items-center gap-2">
-              <img src={logo.src} className="max-h-8" alt={logo.alt} />
+            <a href={"/"} className="flex items-center gap-2">
+              <h1 style={{ fontFamily: "Miskan" }}> A.</h1>
             </a>
             <Sheet>
               <SheetTrigger asChild>
@@ -106,8 +94,8 @@ const Navbar1 = ({
               <SheetContent className="overflow-y-auto">
                 <SheetHeader>
                   <SheetTitle>
-                    <a href={logo.url} className="flex items-center gap-2">
-                      <img src={logo.src} className="max-h-8" alt={logo.alt} />
+                    <a href={"/"} className="flex items-center gap-2">
+                      <h1 style={{ fontFamily: "Miskan" }}> A.</h1>
                     </a>
                   </SheetTitle>
                 </SheetHeader>
