@@ -13,7 +13,7 @@ export default function TrackHabit() {
     new Date("2025-05-13"),
     new Date("2025-05-21"),
     new Date("2025-05-23"),
-  ]);
+  ]); // Get the lIST FROM DB
 
   const toggleDate = (date: Date) => {
     const exists = markedDates.some(
